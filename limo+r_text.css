@@ -1,0 +1,569 @@
+﻿/*
+1. header-
+2. content
+    Usloviya
+    button
+3. footer
+    dws-menu
+    @media
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0.6em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* content */
+
+.content {
+    flex-direction: column;
+}
+
+.name {
+    padding-top: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.6em;
+    color: crimson;
+    text-shadow: 2px 5px 10px 1px #242222;
+    text-align: center;
+}
+
+.name2 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.2em;
+    color: rgb(248, 247, 247);
+    text-shadow: 2px 5px 10px 1px crimson;
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(32, 28, 29);
+    text-shadow: 2px 5px 10px 1px #242222;
+    position: relative;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-size: 1.2em;
+    margin: 4px;
+}
+
+h2 {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.name1 {
+    font-size: 2em;
+    text-align: center;
+    color: aliceblue;
+}
+
+.container {
+    margin: 0;
+    max-width: 100%;
+    height: 10%;
+    background-color: rgb(77, 102, 117);
+    box-shadow: 2px 5px 10px 1px #7a7a7a;
+}
+
+.contain {
+    margin: 0;
+    height: 260px;
+    max-width: 100%;
+}
+
+.contain {
+    margin-top: 0.7em;
+    background: url('./s1200 - к.jpg') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+}
+
+.container2 {
+    margin-top: 40px;
+    max-width: 100%;
+    height: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    box-shadow: 2px 5px 10px 1px #6b6b6b;
+    overflow: hidden;
+}
+
+.photo2 {
+    max-width: 40%;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding: 5px;
+    background: rgba(163, 167, 170, 0.0);
+}
+
+.photo4 {
+    max-width: 49%;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding: 5px;
+    background: rgba(163, 167, 170, 0.0);
+}
+
+.photo5 {
+    max-width: 24%;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding: 5px;
+    background: rgba(163, 167, 170, 0.0);
+}
+
+.photo55 {
+    max-width: 32%;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding: 5px;
+    background: rgba(163, 167, 170, 0.0);
+}
+
+.photo6 {
+    max-width: 48%;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding: 5px;
+    background: rgba(163, 167, 170, 0.0);
+}
+
+.photo7 {
+    max-width: 96%;
+    height: auto;
+    display: block;
+    padding: 5px;
+}
+
+.container3 {
+    margin-top: 40px;
+    max-width: 100%;
+    height: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    box-shadow: 2px 5px 10px 1px #6b6b6b;
+    overflow: hidden;
+}
+
+.photo3 {
+    max-width: 40%;
+    height: auto;
+    display: inline-block;
+    float: right;
+    padding: 5px;
+    background: rgba(163, 167, 170, 0.0);
+}
+
+.punkt_menu {
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    overflow: hidden;
+}
+
+.punkt_menu2 {
+    margin-top: 50px;
+    max-width: 100%;
+    height: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgb(228, 235, 235);
+    box-shadow: 2px 5px 10px 1px #868686;
+    overflow: hidden;
+}
+
+.more {
+    font-size: 1em;
+    clear: both;
+}
+
+summary {
+    outline: none;
+    color: rgb(7, 86, 136);
+}
+
+.icon {
+    float: left;
+    border-radius: 50%;
+    max-width: 6em;
+    margin: 0.5em;
+    height: auto;
+}
+
+.sclear {
+    clear: both;
+}
+
+
+/* button */
+
+.form {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.feedback-input {
+    color: #000;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: aliceblue;
+    padding: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0px solid transparent;
+    border-bottom: 1px solid #000;
+}
+
+textarea {
+    width: 680px;
+    height: 60px;
+    resize: vertical;
+}
+
+.button-submit {
+    float: left;
+    width: 100%;
+    border: 0px solid transparent;
+    cursor: pointer;
+    background-color: #4D6675;
+    color: aliceblue;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0, 3s;
+    margin-top: -6px;
+    font-weight: 300;
+}
+
+.button-submit:hover {
+    background-color: aliceblue;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.ease {
+    width: 0;
+    height: 44px;
+    background-color: #fbfbfb;
+    transition: .3s ease;
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+}
+
+.black-block {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    padding: 1em;
+    background-color: rgb(77, 102, 117);
+    box-shadow: 2px 5px 10px 1px #c0c0c0;
+}
+
+footer a {
+    color: ghostwhite;
+    margin: 1px;
+    text-decoration: none;
+    a: hover;
+}
+
+.tel {
+    border-radius: 50%;
+    max-width: 4em;
+    margin: 0.5em;
+    height: auto;
+}
+
+.number {
+    font-size: 1.5em;
+    color: ghostwhite;
+    margin: 0.5em;
+}
+
+.dws-menu * {
+    margin: 0;
+    padding: 0;
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+}
+
+.dws-menu {
+    padding-top: 0.4%;
+    padding-bottom: 0.3%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.dws-menu ul,
+.dws-menu ol {
+    list-style: none;
+}
+
+.dws-menu>ul {
+    display: flex;
+    justify-content: center;
+}
+
+.dws-menu>ul li {
+    position: relative;
+    border-right: 1px solid #c7c8ca;
+}
+
+.dws-menu>ul li:first-child {
+    border-left: 1px solid #b2b3b5;
+}
+
+.dws-menu>ul li:last-child {
+    border-right: 1px solid #babbbd;
+}
+
+.dws-menu>ul li>a i.fa {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+
+.dws-menu>ul li a {
+    display: block;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3 */
+    background: rgb(201, 201, 201);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(201, 201, 201, 1) 0%, rgba(246, 246, 246, 1) 2%, rgba(196, 197, 199, 1) 98%, rgba(117, 117, 119, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(201, 201, 201, 1) 0%, rgba(246, 246, 246, 1) 2%, rgba(196, 197, 199, 1) 98%, rgba(117, 117, 119, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(201, 201, 201, 1) 0%, rgba(246, 246, 246, 1) 2%, rgba(196, 197, 199, 1) 98%, rgba(117, 117, 119, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577', GradientType=0);
+    /* IE6-9 */
+    padding: 5px 40px 5px 40px;
+    font-size: 14px;
+    color: #454547;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.dws-menu li a:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0e1e5+0,454547+2,454547+98,e0e1e5+100 */
+    background: rgb(224, 225, 229);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(224, 225, 229, 1) 0%, rgba(69, 69, 71, 1) 2%, rgba(69, 69, 71, 1) 98%, rgba(224, 225, 229, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(224, 225, 229, 1) 0%, rgba(69, 69, 71, 1) 2%, rgba(69, 69, 71, 1) 98%, rgba(224, 225, 229, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(224, 225, 229, 1) 0%, rgba(69, 69, 71, 1) 2%, rgba(69, 69, 71, 1) 98%, rgba(224, 225, 229, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e0e1e5', endColorstr='#e0e1e5', GradientType=0);
+    /* IE6-9 */
+    color: #ffffff;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
+
+
+/*sub menu*/
+
+.dws-menu li ul {
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+
+.dws-menu li>ul li {
+    border: 1px solid #c7c8ca;
+}
+
+.dws-menu li>ul li a {
+    padding: 10px;
+    text-transform: none;
+    background: #e4e4e5;
+}
+
+.dws-menu li>ul li ul {
+    position: absolute;
+    right: -170px;
+    top: 0;
+}
+
+.dws-menu li:hover>ul {
+    display: block;
+}
+
+
+/*==== MEDIA ====*/
+
+.dws-menu [type="checkbox"],
+.dws-menu label.toggleSubmenu {
+    display: none;
+}
+
+.dws-menu label.toggleMenu {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3 */
+    background: rgb(201, 201, 201);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(201, 201, 201, 1) 0%, rgba(246, 246, 246, 1) 2%, rgba(196, 197, 199, 1) 98%, rgba(117, 117, 119, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(201, 201, 201, 1) 0%, rgba(246, 246, 246, 1) 2%, rgba(196, 197, 199, 1) 98%, rgba(117, 117, 119, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(201, 201, 201, 1) 0%, rgba(246, 246, 246, 1) 2%, rgba(196, 197, 199, 1) 98%, rgba(117, 117, 119, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577', GradientType=0);
+    /* IE6-9 */
+    display: none;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+.dws-menu label.toggleMenu .fa {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+
+@media all and (max-width: 800px) {
+    .dws-menu {
+        overflow: hidden;
+    }
+    .dws-menu ul {
+        display: block;
+        max-height: 0;
+        transition: max-height 0.3s;
+    }
+    .dws-menu li>ul li ul {
+        position: absolute;
+        right: auto;
+        top: auto;
+    }
+    .dws-menu label.toggleMenu {
+        display: block;
+    }
+    input.toggleMenu:checked+label.toggleMenu {
+        background: #000;
+        color: #fff;
+    }
+    input.toggleMenu:checked~ul,
+    input.toggleSubmenu:checked~ul {
+        display: block;
+        position: relative;
+        max-height: 5000px;
+        transition: max-height 2s ease-in;
+    }
+    .dws-menu label.toggleSubmenu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        display: block;
+    }
+    input.toggleSubmenu:checked~a {
+        background: #454547;
+        color: #fff;
+    }
+    .dws-menu label.toggleSubmenu .fa:before {
+        content: "\f0d7";
+        color: #454547;
+    }
+    .dws-menu label.toggleSubmenu .fa {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+    .dws-menu input.toggleSubmenu:checked~label.toggleSubmenu .fa::before {
+        content: "\f0d8";
+        color: #ffffff;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .responsive {
+        font-size: calc(100vw / 40);
+        /*100% ширины экрана деленное на произвольное число*/
+    }
+    h1 {
+        font-size: calc(100vw * 0.03);
+        letter-spacing: calc(100vw * 0.008);
+    }
+    h2 {
+        font-size: calc(100vw * 0.021)
+    }
+    .name {
+        font-size: calc(100vw * 0.1);
+    }
+    .name2 {
+        font-size: calc(100vw * 0.06);
+    }
+    .contain {
+        height: calc(100vw * 0.35);
+    }
+    .more {
+        font-size: calc(100vw * 0.02);
+    }
+    footer a {
+        margin-left: 25px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .responsive {
+        font-size: calc(100vw * 0.02);
+        /*100% ширины экрана умноженное на произвольное число*/
+    }
+}
+
+@media all and (max-width: 800px) {
+    .photo2 {
+        min-width: 98%;
+    }
+    .photo3 {
+        min-width: 98%;
+    }
+    .photo4 {
+        min-width: 98%;
+    }
+    .photo5 {
+        min-width: 49%;
+    }
+    .photo6 {
+        min-width: 49%;
+    }
+}
